@@ -78,9 +78,9 @@ function Page1() {
       <div className="relative -rotate-2 paper torn p-6">
         <Tape className="-top-3 left-6 -rotate-6" color="bg-pink" />
         <div className="font-pixel text-xs">memory no. 001</div>
-        <h3 className="font-display text-3xl font-bold">our first date</h3>
+        <h3 className="font-display text-3xl font-bold">Lovemade &lt;3</h3>
         <div className="my-3 grid h-40 place-items-center grid-paper border-2 border-dashed border-ink/40 font-hand text-2xl">✎ doodle of us here ✎<br />(bla bla bla)</div>
-        <p className="font-hand text-xl">"write what you remember: the weather, the song, the moment you knew."</p>
+        <p className="font-hand text-xl">kaikai &amp; hiro 26.10.26</p>
       </div>
       <div className="flex flex-col items-center gap-6">
         <div className="relative rotate-3 border-2 border-dashed border-ink bg-blue px-6 py-3 font-pixel">
