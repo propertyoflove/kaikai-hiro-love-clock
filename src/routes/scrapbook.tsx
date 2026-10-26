@@ -99,12 +99,12 @@ function Page2() {
   return (
     <div className="relative grid gap-8 p-6 sm:grid-cols-3 sm:p-10">
       <div className="sm:col-span-3 text-center"><h3 className="inline-block rotate-1 bg-butter px-4 font-display text-3xl font-bold">little things i love ✿</h3></div>
-      <FlipNote color="bg-pink" front="the way you laugh" back="like a sneeze and a song had a baby. bla bla." />
-      <FlipNote color="bg-blue" front="your sleepy voice" back="replace me with something only you two know ♡" />
-      <FlipNote color="bg-mint" front="your weird snacks" back="apples with... ketchup?? we don't talk about it." />
+      <FlipNote color="bg-pink" front="the way you laugh" back="the way you care for me in your own little ways." />
+      <FlipNote color="bg-blue" front="your sleepy voice" back="seeing you get excited about the things you love." />
+      <FlipNote color="bg-mint" front="your weird snacks" back="the way you remember things i've told you before." />
       <div className="sm:col-span-2 relative -rotate-1 lined-paper p-6 font-hand text-2xl leading-7 shadow-[var(--shadow-sticker)]">
         <div className="absolute -top-4 left-8 h-10 w-4 rounded-full border-4 border-muted-foreground" />
-        dear diary, today Hiro did the thing again. you know, the thing. and i laughed so hard i snorted. ✎ (write the real story here)
+        i think my heart has learned a language that only makes sense when it speaks of you. it finds you in the most ordinary things, in thoughts i never meant to follow, in stories i save for later because you are the person i want to tell them to. loving you has become such a natural part of me that i sometimes forget it was once a feeling i had to find the words for. and yet, even now, i struggle to explain how much you mean to me. how do i put into sentences the affection i carry for you? how do i tell you that somewhere between knowing you and loving you, you became a part of the way i imagine my days? i want to know every version of you, even the ones you have yet to meet yourself. i want to be there for the stories you tell a hundred times and the ones you hesitate to tell at all.
       </div>
       <Lift secret="🎁 surprise! hidden note: 'i saved the receipt from our first coffee.'">
         <div className="rotate-2 bg-lavender p-6 text-center font-hand text-xl shadow-[var(--shadow-sticker)]">lift this flap ↑<br />something's hiding…</div>
