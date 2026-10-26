@@ -43,10 +43,10 @@ function Envelope({ msg, color = "bg-pink" }: { msg: string; color?: string }) {
   const [open, setOpen] = useState(false);
   return (
     <button onClick={() => setOpen(!open)} className="relative h-28 w-40 [perspective:600px]" aria-label="open envelope">
-      <div className={`absolute inset-x-2 bottom-2 rounded-sm lined-paper p-2 text-left font-hand text-lg leading-7 transition-all duration-500 ${open ? "-translate-y-16" : "translate-y-0"}`}>{msg}</div>
-      <div className={`absolute inset-0 top-6 rounded-b-md border-2 border-ink ${color}`} />
-      <div className={`absolute inset-x-0 top-6 h-14 origin-top border-2 border-ink ${color} transition-transform duration-500 [clip-path:polygon(0_0,100%_0,50%_100%)] ${open ? "[transform:rotateX(180deg)]" : ""}`} />
-      <div className="absolute left-1/2 top-12 -translate-x-1/2 text-lg">{open ? "" : "♡"}</div>
+      <div className={`absolute inset-x-2 bottom-2 rounded-sm lined-paper p-2 text-left font-hand text-lg leading-7 transition-all duration-500 ${open ? "z-30 -translate-y-24" : "z-0"}`}>{msg}</div>
+      <div className={`absolute inset-0 top-6 z-10 rounded-b-md border-2 border-ink ${color}`} />
+      <div className={`absolute inset-x-0 top-6 z-10 h-14 origin-top border-2 border-ink ${color} transition-transform duration-500 [clip-path:polygon(0_0,100%_0,50%_100%)] ${open ? "[transform:rotateX(180deg)]" : ""}`} />
+      <div className="absolute left-1/2 top-12 z-20 -translate-x-1/2 text-lg">{open ? "" : "♡"}</div>
     </button>
   );
 }
