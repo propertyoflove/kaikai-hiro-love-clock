@@ -80,7 +80,7 @@ function Page1() {
         <Tape className="-top-3 left-6 -rotate-6" color="bg-pink" />
         <div className="font-pixel text-xs">memory no. 001</div>
         <h3 className="font-display text-3xl font-bold">Lovemade &lt;3</h3>
-        <div className="relative my-3 h-64 overflow-hidden border-2 border-dashed border-ink/40 bg-white/60 p-1"><img src={usAsset.url} alt="Kaikai and Hiro" className="absolute inset-1 h-[calc(100%-0.5rem)] w-[calc(100%-0.5rem)] object-cover" /></div>
+        <div className="relative my-3 h-64 overflow-hidden border-2 border-dashed border-ink/40 bg-[#f2efe6] p-1"><img src={usAsset.url} alt="Kaikai and Hiro" className="absolute inset-1 h-[calc(100%-0.5rem)] w-[calc(100%-0.5rem)] object-contain" /></div>
         <p className="font-hand text-xl">kaikai &amp; hiro 26.10.26</p>
       </div>
       <div className="flex flex-col items-center gap-6">
