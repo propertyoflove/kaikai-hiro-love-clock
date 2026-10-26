@@ -138,7 +138,7 @@ function Page3() {
           <div className="absolute -top-5 left-1/2 h-12 w-6 -translate-x-1/2 rounded-full border-4 border-ink/60" />
           <div className="font-display text-2xl font-bold">places we've been</div>
           <ul className="mt-2 list-none font-hand text-xl">
-            <li>☐ the tiny café (bla bla)</li><li>☑ the beach at sunset</li><li>☐ somewhere far away ✈</li>
+            <li>☐ the tiny café</li><li>☑ the beach at sunset</li><li>☐ somewhere far away ✈</li>
           </ul>
         </div>
         <div className="flex gap-4"><Envelope color="bg-blue" msg="open me on a bad day ♡" /><Envelope color="bg-butter" msg="you are my sunshine ☀" /></div>
