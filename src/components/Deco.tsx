@@ -58,7 +58,7 @@ const FLOATERS = ["♡", "✦", "☁", "🍒", "🦋", "☺", "🎀", "✿"];
 export function FloatingBits() {
   const [items, setItems] = useState<{ l: number; d: number; s: number; c: string; delay: number }[]>([]);
   useEffect(() => {
-    setItems(Array.from({ length: 18 }, (_, i) => ({ l: Math.random() * 100, d: 14 + Math.random() * 14, s: 14 + Math.random() * 18, c: FLOATERS[i % FLOATERS.length], delay: -Math.random() * 20 })));
+    setItems(Array.from({ length: 18 }, (_, i) => ({ l: Math.random() * 100, d: 14 + Math.random() * 14, s: 14 + Math.random() * 18, c: FLOATERS[i % FLOATERS.length]!, delay: -Math.random() * 20 })));
   }, []);
   return (
     <div className="pointer-events-none fixed inset-0 -z-0 overflow-hidden" aria-hidden>
