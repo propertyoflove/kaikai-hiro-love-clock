@@ -39,7 +39,7 @@
   --font-hand: "Caveat", cursive;
   --font-sans: "Quicksand", sans-serif;
   --font-display: "Sniglet", "Quicksand", sans-serif;
-  --font-title: "Chewy", "Sniglet", cursive;
+  --font-title: "Titan One", "Sniglet", cursive;
 
 }
 
@@ -51,9 +51,11 @@
   --butter: oklch(0.95 0.09 98);
   --cherry: oklch(0.62 0.2 15);
   --mint: oklch(0.9 0.07 165);
-  --blush: oklch(0.94 0.05 350);
-  --berry: oklch(0.45 0.14 355);
-  --candy: linear-gradient(150deg, oklch(0.985 0.03 350) 0%, oklch(0.9 0.1 355) 30%, oklch(0.995 0.01 350) 50%, oklch(0.8 0.15 3) 70%, oklch(0.91 0.09 350) 100%);
+  --bubble-fill: linear-gradient(180deg, oklch(0.97 0.04 350) 0%, oklch(0.92 0.11 355) 38%, oklch(0.76 0.19 5) 54%, oklch(0.84 0.16 355) 76%, oklch(0.93 0.09 350) 100%);
+  --bubble-stroke: oklch(0.4 0.15 355);
+  --bubble-ring: oklch(0.99 0.005 350);
+  --bubble-shadow: oklch(0.56 0.19 300);
+
 
 
   --paper: oklch(0.985 0.012 85);
@@ -111,11 +113,15 @@
   -webkit-text-stroke: 1.5px var(--ink);
 }
 @utility candy-text {
-  background: var(--candy); -webkit-background-clip: text; background-clip: text; color: transparent;
-  -webkit-text-stroke: 1.5px var(--berry);
-  padding-bottom: 0.12em;
-  filter: drop-shadow(2px 3px 0 oklch(0.5 0.14 355 / 0.25));
+  background: var(--bubble-fill); -webkit-background-clip: text; background-clip: text; color: transparent;
+  -webkit-text-stroke: 1.5px var(--bubble-stroke);
+  padding-bottom: 0.18em;
+  filter:
+    drop-shadow(1px 0 0 var(--bubble-ring)) drop-shadow(-1px 0 0 var(--bubble-ring))
+    drop-shadow(0 1px 0 var(--bubble-ring)) drop-shadow(0 -1px 0 var(--bubble-ring))
+    drop-shadow(4px 5px 0 var(--bubble-shadow));
 }
+
 
 
 @utility glitter-btn {
