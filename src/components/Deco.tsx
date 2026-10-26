@@ -73,7 +73,7 @@ export function SectionTitle({ kicker, title, children }: { kicker: string; titl
   return (
     <div className="mb-10 text-center">
       <span className="inline-block -rotate-2 rounded-md border-2 border-ink bg-butter px-3 py-0.5 font-pixel text-sm">{kicker}</span>
-      <h1 className="mt-3 font-display text-4xl font-bold sm:text-6xl mint-text">{title}</h1>
+      <h1 className="mt-3 font-title text-4xl font-bold sm:text-6xl candy-text">{title}</h1>
       {children && <p className="mx-auto mt-3 max-w-xl font-hand text-2xl">{children}</p>}
     </div>
   );
