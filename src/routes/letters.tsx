@@ -18,7 +18,7 @@ const LETTERS = [
   { when: "you miss me", seal: "🍎", color: "bg-pink", body: "i always a little too excited to love you, always rooting for you, and always grateful that out of all the people in this world, i get to have you. i love you lots and lots, my dearly nyinyo <3" },
   { when: "you can't sleep", seal: "☁", color: "bg-blue", body: "Count tiny clouds with me: one, two, three... each one is a reason I love you." },
   { when: "you're sad", seal: "☺", color: "bg-butter", body: "You're allowed to be sad. I'm still here, still yours, still bringing snacks." },
-  { when: "you need a laugh", seal: "🍒", color: "bg-lavender", body: "Remember the incident? Yeah. That one. (insert inside joke here)" },
+  { when: "you need a laugh", seal: "🍒", color: "bg-lavender", body: "i was going to play hard to get, but then i remembered i'm actually easy to get. just give me attention, kakak!" },
   { when: "it's our anniversary", seal: "✦", color: "bg-mint", body: "August 26 — the day our little universe started. Happy us-day, my love." },
   { when: "you doubt yourself", seal: "🦋", color: "bg-pink", body: "You are brave, sparkly, and wildly capable. I have receipts. Many receipts." },
 ];
