@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useRef, useState, type ReactNode } from "react";
 import { Apple, ChromeStar, PixelHeart, SectionTitle } from "@/components/Deco";
+import usAsset from "@/assets/Desain_tanpa_judul_11.png.asset.json";
 
 export const Route = createFileRoute("/scrapbook")({
   head: () => ({
@@ -79,7 +80,7 @@ function Page1() {
         <Tape className="-top-3 left-6 -rotate-6" color="bg-pink" />
         <div className="font-pixel text-xs">memory no. 001</div>
         <h3 className="font-display text-3xl font-bold">Lovemade &lt;3</h3>
-        <div className="my-3 grid h-40 place-items-center grid-paper border-2 border-dashed border-ink/40 font-hand text-2xl">✎ doodle of us here ✎<br />(bla bla bla)</div>
+        <div className="my-3 grid h-40 place-items-center overflow-hidden border-2 border-dashed border-ink/40 bg-white/60 p-1"><img src={usAsset.url} alt="Kaikai and Hiro" className="h-full w-full object-cover" /></div>
         <p className="font-hand text-xl">kaikai &amp; hiro 26.10.26</p>
       </div>
       <div className="flex flex-col items-center gap-6">
