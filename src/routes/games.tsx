@@ -34,7 +34,7 @@ function Quiz() {
         <button onClick={() => { setI(0); setScore(0); setPick(null); }} className="glitter-btn mt-4 rounded-full px-4 py-1 font-pixel">play again</button>
       </div>
     );
-  const q = QUIZ[i];
+  const q = QUIZ[i]!;
   return (
     <div>
       <div className="font-pixel text-xs">question {i + 1}/{QUIZ.length} · (edit answers to your real ones)</div>
@@ -61,11 +61,11 @@ function Memory() {
   const reset = () => { setCards([...EMO, ...EMO].sort(() => Math.random() - 0.5)); setUp([]); setFound([]); setMoves(0); };
   useEffect(reset, []);
   const click = (k: number) => {
-    if (up.length === 2 || up.includes(k) || found.includes(cards[k])) return;
-    const n = [...up, k]; setUp(n);
+    if (up.length === 2 || up.includes(k) || found.includes(cards[k]!)) return;
+    const n = [...up, k]; setUp(n); const c0 = cards[n[0]!]!, c1 = cards[n[1]!]!, ck = cards[k]!;
     if (n.length === 2) {
       setMoves((m) => m + 1);
-      if (cards[n[0]] === cards[n[1]]) { setFound((f) => [...f, cards[k]]); setUp([]); }
+      if (c0 === c1) { setFound((f) => [...f, ck]); setUp([]); }
       else setTimeout(() => setUp([]), 700);
     }
   };

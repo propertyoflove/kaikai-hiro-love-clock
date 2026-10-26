@@ -151,7 +151,7 @@ const BG = ["bg-blue", "bg-pink", "bg-mint"];
 
 function Scrapbook() {
   const [p, setP] = useState(0);
-  const Page = PAGES[p];
+  const Page = PAGES[p]!;
   return (
     <div>
       <SectionTitle kicker="✂ handmade with glue sticks" title="Our Scrapbook">drag the stickers around, open envelopes, flip notes & lift flaps ♡</SectionTitle>
