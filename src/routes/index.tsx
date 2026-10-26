@@ -16,11 +16,11 @@ export const Route = createFileRoute("/")({
 });
 
 const TIMELINE = [
-  { date: "chapter 01", title: "the first hello", text: "baby, have you ever thought about how funny it is that you were the one who texted me first? like, look at you, starting a conversation and accidentally signing yourself up for a lifetime subscription of me. no free trial, no cancellation, no refunds. 😭imagine if you had never sent that first message. we'd just be two random people existing in the same world, completely unaware that one little hello would eventually turn into all these silly conversations, sweet moments, and me being ridiculously in love with you. so honestly, thank you for having the courage to text me first. your biggest achievement might actually be getting yourself a boyfriend who never shuts up about loving you. ♡", icon: "☺", color: "bg-pink" },
-  { date: "chapter 02", title: "sweet convo", text: "there’s something so lovely about the way we talk about absolutely everything and nothing at all. from the silliest jokes to the little stories of our day, every conversation with you feels like my favorite part of being in love. ♡", icon: "💬", color: "bg-blue" },
-  { date: "chapter 03", title: "first date", text: "nervous giggles, shared dessert, someone spilled something, kiss, and cuddle :3", icon: "🍒", color: "bg-butter" },
-  { date: "08.26.2026", title: "officially us!", text: "the day Kaikai & Hiro became Kaikai ♡ Hiro. the universe was born.", icon: "🍎", color: "bg-lavender" },
-  { date: "chapter ∞", title: "everything next", text: "adventures loading... ▓▓▓▓░░░ please do not turn off your heart.", icon: "✦", color: "bg-mint" },
+  { date: "chapter 01", title: "the first hello", text: "baby, have you ever thought about how funny it is that you were the one who texted me first? like, look at you, starting a conversation and accidentally signing yourself up for a lifetime subscription of me. no free trial, no cancellation, no refunds. 😭imagine if you had never sent that first message. we'd just be two random people existing in the same world, completely unaware that one little hello would eventually turn into all these silly conversations, sweet moments, and me being ridiculously in love with you. so honestly, thank you for having the courage to text me first. your biggest achievement might actually be getting yourself a boyfriend who never shuts up about loving you. ♡", icon: "🌸", emoji: "💌", color: "bg-pink" },
+  { date: "chapter 02", title: "sweet convo", text: "there’s something so lovely about the way we talk about absolutely everything and nothing at all. from the silliest jokes to the little stories of our day, every conversation with you feels like my favorite part of being in love. ♡", icon: "💬", emoji: "📟", color: "bg-bubblegum" },
+  { date: "chapter 03", title: "first date", text: "nervous giggles, shared dessert, someone spilled something, kiss, and cuddle :3", icon: "🍒", emoji: "🍰", color: "bg-cotton" },
+  { date: "08.26.2026", title: "officially us!", text: "the day Kaikai & Hiro became Kaikai ♡ Hiro. the universe was born.", icon: "🍎", emoji: "💞", color: "bg-pink" },
+  { date: "chapter ∞", title: "everything next", text: "adventures loading... ▓▓▓▓░░░ please do not turn off your heart.", icon: "✨", emoji: "🛸", color: "bg-bubblegum" },
 ];
 
 function Counter() {
@@ -76,22 +76,30 @@ function Index() {
 
       <section>
         <div className="mb-8 text-center">
-          <span className="font-pixel">♡ our_story.timeline ♡</span>
+          <span className="font-pixel">🎀 our_story.timeline 🎀</span>
           <h2 className="font-title text-4xl candy-text">How We Happened</h2>
         </div>
-        <div className="relative mx-auto max-w-3xl">
-          <div className="absolute left-6 top-0 h-full border-l-4 border-dashed border-ink/40 sm:left-1/2" />
+        <div className="mx-auto grid max-w-4xl gap-5 sm:grid-cols-2">
           {TIMELINE.map((t, i) => (
-            <div key={i} className={`relative mb-8 flex sm:w-1/2 ${i % 2 ? "sm:ml-auto sm:pl-10" : "sm:pr-10"} pl-16 sm:pl-0`}>
-              <button onClick={() => setOpen(open === i ? null : i)}
-                className={`absolute left-1 top-2 grid h-11 w-11 place-items-center rounded-full border-2 border-ink text-xl glossy ${t.color} ${i % 2 ? "sm:-left-[22px]" : "sm:left-auto sm:-right-[22px]"} transition hover:scale-110`}>
-                {t.icon}
+            <div key={i} className={`pixel-border flex flex-col bg-paper transition hover:-translate-y-1 ${i === TIMELINE.length - 1 ? "sm:col-span-2" : ""}`}>
+              <button onClick={() => setOpen(open === i ? null : i)} className={`flex w-full items-center gap-2 border-b-2 border-ink px-3 py-1 text-left font-pixel text-sm ${t.color}`}>
+                <span className="text-lg leading-none">{t.icon}</span>
+                <span className="truncate">{t.date}</span>
+                <span className="ml-auto shrink-0">{open === i ? "▾ close" : "▸ open"}</span>
               </button>
-              <button onClick={() => setOpen(open === i ? null : i)} className={`w-full text-left paper torn p-4 transition ${i % 2 ? "rotate-1" : "-rotate-1"} hover:rotate-0`}>
-                <div className="font-pixel text-xs">{t.date}</div>
-                <div className="font-display text-xl font-bold">{t.title}</div>
-                {open === i ? <p className="mt-1 animate-pageflip font-hand text-xl">{t.text}</p> : <p className="font-pixel text-xs opacity-60">click to unfold ▾</p>}
-              </button>
+              <div className="flex flex-1 items-start gap-3 p-4">
+                <span className={`grid h-12 w-12 shrink-0 place-items-center rounded-xl border-2 border-ink text-2xl glossy ${t.color}`}>{t.emoji}</span>
+                <div className="min-w-0">
+                  <div className="font-display text-2xl font-bold">{t.title}</div>
+                  {open === i
+                    ? <p className="mt-1 animate-pageflip font-hand text-xl">{t.text}</p>
+                    : <p className="font-pixel text-xs opacity-60">click the bar to unfold ▾</p>}
+                </div>
+              </div>
+              <div className="flex items-center justify-between border-t-2 border-dashed border-ink/30 bg-cotton px-3 py-1 font-pixel text-xs">
+                <span>no. {String(i + 1).padStart(2, "0")}</span>
+                <span className="text-base leading-none">🍎💗🎀🦋✨</span>
+              </div>
             </div>
           ))}
         </div>
