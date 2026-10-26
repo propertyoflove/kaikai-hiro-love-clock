@@ -117,7 +117,7 @@ function Page2() {
 function Page3() {
   const [peeled, setPeeled] = useState<number[]>([]);
   const stickers = ["🍎", "🍒", "🦋", "⭐", "☁", "🎀", "☺", "💌", "🌷"];
-  const notes = ["bla bla 1", "you're my favorite notification", "cherry on top of my life", "flutter flutter", "my star ✦", "head in the clouds w/ you", "a bow for my gift", "always smiling", "love letters only"];
+  const notes = ["cute little fish", "you're my favorite notification", "cherry on top of my life", "flutter flutter", "my star ✦", "head in the clouds w/ you", "a bow for my gift", "always smiling", "love letters only"];
   return (
     <div className="relative grid gap-8 p-6 sm:grid-cols-2 sm:p-10">
       <div className="relative rotate-1 grid-paper p-6 shadow-[var(--shadow-sticker)]">
