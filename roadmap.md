@@ -1,3 +1,3 @@
 # Roadmap
 
-- [x] Page titles: pastel pink fill + more whimsical display font (done — verified on all six pages)
+- [x] Page titles: Y2K bubble-letter look (Titan One, pink jelly gradient, white sticker ring, purple shadow) — verified on all pages
