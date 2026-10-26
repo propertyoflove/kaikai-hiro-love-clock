@@ -63,7 +63,7 @@ function Index() {
         <button aria-label="glossy apple" onClick={() => setApples((a) => a + 1)} className="mx-auto block transition hover:scale-110 active:scale-90">
           <Apple size={110} className="animate-bouncy" />
         </button>
-        <p className="font-pixel text-xs">{apples === 0 ? "(tap the apple)" : apples < 7 ? `${apples} apple${apples > 1 ? "s" : ""} of love collected` : "🍎×7! Hiro owes Kaikai one apple pie, contractually."}</p>
+        <p className="font-pixel text-xs">{apples === 0 ? "(tap the apple)" : apples < 7 ? `${apples} apple${apples > 1 ? "s" : ""} of love collected` : "🍎×7! Hiro owes Kaikai one apple, contractually."}</p>
         <h1 className="mt-4 font-title text-5xl leading-tight sm:text-7xl candy-text">Kaikai ♡ Hiro's<br />Little Universe</h1>
         <p className="mx-auto mt-4 max-w-lg font-hand text-3xl">a tiny corner of the internet made of glitter, cherries & us.</p>
         <div className="mt-6 flex flex-wrap justify-center gap-3">

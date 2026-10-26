@@ -21,8 +21,8 @@ const NICK = [
   { n: "sayang", by: "Hiro → Kaikai", why: "karena itu panggilan termanis ♡" },
 ];
 const JOKES = ["the 'just five more minutes' incident", "the GPS that betrayed us", "'it's not a phase, it's a vibe'", "the cursed karaoke song", "that one duck. iykyk 🦆", "replace with your joke ♡"];
-const KAI = ["hums when she's happy", "steals the last bite (cutely)", "remembers every tiny detail", "bla bla bla"];
-const HIRO = ["laughs at his own jokes first", "warm hands, always", "makes the best playlists", "bla bla bla"];
+const KAI = ["hums when she's happy", "steals the last bite (cutely)", "remembers every tiny detail"];
+const HIRO = ["laughs at his own jokes first", "warm hands, always", "makes the best playlists"];
 
 function Us() {
   const [flip, setFlip] = useState<number | null>(null);
