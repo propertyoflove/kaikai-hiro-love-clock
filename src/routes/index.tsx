@@ -64,7 +64,7 @@ function Index() {
           <Apple size={110} className="animate-bouncy" />
         </button>
         <p className="font-pixel text-xs">{apples === 0 ? "(tap the apple)" : apples < 7 ? `${apples} apple${apples > 1 ? "s" : ""} of love collected` : "🍎×7! Hiro owes Kaikai one apple pie, contractually."}</p>
-        <h1 className="mt-4 font-title text-5xl font-extrabold leading-tight sm:text-7xl candy-text">Kaikai ♡ Hiro's<br />Little Universe</h1>
+        <h1 className="mt-4 font-title text-5xl leading-tight sm:text-7xl candy-text">Kaikai ♡ Hiro's<br />Little Universe</h1>
         <p className="mx-auto mt-4 max-w-lg font-hand text-3xl">a tiny corner of the internet made of glitter, cherries & us.</p>
         <div className="mt-6 flex flex-wrap justify-center gap-3">
           <Link to="/scrapbook" className="glitter-btn rounded-full px-6 py-3 font-pixel">open scrapbook ✂</Link>
@@ -77,7 +77,7 @@ function Index() {
       <section>
         <div className="mb-8 text-center">
           <span className="font-pixel">♡ our_story.timeline ♡</span>
-          <h2 className="font-title text-4xl font-bold candy-text">How We Happened</h2>
+          <h2 className="font-title text-4xl candy-text">How We Happened</h2>
         </div>
         <div className="relative mx-auto max-w-3xl">
           <div className="absolute left-6 top-0 h-full border-l-4 border-dashed border-ink/40 sm:left-1/2" />
