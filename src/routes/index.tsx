@@ -18,7 +18,7 @@ export const Route = createFileRoute("/")({
 const TIMELINE = [
   { date: "chapter 01", title: "the first hello", text: "baby, have you ever thought about how funny it is that you were the one who texted me first? like, look at you, starting a conversation and accidentally signing yourself up for a lifetime subscription of me. no free trial, no cancellation, no refunds. 😭imagine if you had never sent that first message. we'd just be two random people existing in the same world, completely unaware that one little hello would eventually turn into all these silly conversations, sweet moments, and me being ridiculously in love with you. so honestly, thank you for having the courage to text me first. your biggest achievement might actually be getting yourself a boyfriend who never shuts up about loving you. ♡", icon: "☺", color: "bg-pink" },
   { date: "chapter 02", title: "the endless chat", text: "texting until 3am about nothing and everything. replace me with your story.", icon: "💬", color: "bg-blue" },
-  { date: "chapter 03", title: "first date", text: "nervous giggles, shared dessert, someone spilled something. bla bla.", icon: "🍒", color: "bg-butter" },
+  { date: "chapter 03", title: "first date", text: "nervous giggles, shared dessert, someone spilled something, kiss, and cuddle :3", icon: "🍒", color: "bg-butter" },
   { date: "08.26.2026", title: "officially us!", text: "the day Kaikai & Hiro became Kaikai ♡ Hiro. the universe was born.", icon: "🍎", color: "bg-lavender" },
   { date: "chapter ∞", title: "everything next", text: "adventures loading... ▓▓▓▓░░░ please do not turn off your heart.", icon: "✦", color: "bg-mint" },
 ];
