@@ -15,10 +15,10 @@ export const Route = createFileRoute("/us")({
 });
 
 const NICK = [
-  { n: "apple pie", by: "Hiro → Kaikai", why: "because she's sweet and a little bit crumbly (bla bla)" },
-  { n: "bubu", by: "Kaikai → Hiro", why: "no one knows why. not even us." },
-  { n: "captain snack", by: "Kaikai → Hiro", why: "always has snacks. ALWAYS." },
-  { n: "pixel", by: "Hiro → Kaikai", why: "small, cute, and makes the whole picture." },
+  { n: "Dut", by: "Hiro → Kaikai", why: "karena menurut dia, aku gudut." },
+  { n: "meng ginuk ginuk", by: "Kaikai → Hiro", why: "lucu banget kayaa, meng yang bau susu ♡" },
+  { n: "captain Hirono", by: "Kaikai → Hiro", why: "dia suka hirono banget." },
+  { n: "sayang", by: "Hiro → Kaikai", why: "karena itu panggilan termanis ♡" },
 ];
 const JOKES = ["the 'just five more minutes' incident", "the GPS that betrayed us", "'it's not a phase, it's a vibe'", "the cursed karaoke song", "that one duck. iykyk 🦆", "replace with your joke ♡"];
 const KAI = ["hums when she's happy", "steals the last bite (cutely)", "remembers every tiny detail", "bla bla bla"];
